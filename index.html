@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <div id="main-container">
+            <table>
+                <tr>
+                    <td>
+                        <div id="shadow0" class="step first-step-shadow">
+                        </div>
+                    <td>
+                        <div id="shadow1" class="step second-step-shadow">
+                        </div>
+                    <td>
+                        <div id="shadow2" class="step third-step-shadow">
+                        </div>
+                </tr>
+            </table>
+            <table id="step-text-container">
+                <tr>
+                    <td>
+                        <div id="microsoft-teams-login" class="step-text">
+                            <h3>1</h3>
+                            <h3 id="msmsg">Inicia sesión con tu cuenta de administrador del Tenant de Microsoft Teams
+                            </h3>
+                        </div>
+                    <td>
+                        <div id="webex-teams-login" class="step-text">
+                            <h3>2</h3>
+                            <h3 id="wbxmsg">Inicia sesión con tu cuenta de administrador de organización de Webex Teams
+                            </h3>
+                        </div>
+                    <td>
+                        <div id="migrate" class="step-text">
+                            <h3>3</h3>
+                            <h3>Importa los datos de Microsoft Teams a Webex Teams</h3>
+                        </div>
+                </tr>
+            </table>
+            <table id="steps">
+                <tr>
+                    <td>
+                        <div id="track1" class="track first-step"></div>
+                    </td>
+                    <td>
+                        <div id="track2" class="track last-step"></div>
+                    </td>
+                </tr>
+            </table>
+            <table style="position: absolute">
+                <tr>
+                    <td>
+                        <div id="step0" class="step" onclick="MicrosoftTeamsLogin()"><img id="mst-icon"
+                                src="icons/Microsoft-Teams-logo.png" /></div>
+                    <td>
+                        <div id="step1" class="step" onclick="WebexTeamsLogin()"><img id="webex-icon"
+                                src="icons/webex-teams.png" /></div>
+                    <td>
+                        <div id="step2" class="step" onclick="checkAuthentication()"><img id="mig-icon"
+                                src="icons/migrate.png" /></div>
+                </tr>
+            </table>
+        </div>
+        <div id="resul-res">
+            <h3 id="resul-text">Migración completada con éxito.</h3>
+        </div>
+        <div id="loading-text">
+            <h3>Recopilando información e importando a Webex Teams...</h3>
+        </div>
+        <img id="top-logo" src="icons/logo.png">
+        <img id="bottom-logo" src="icons/makenailogo3.png">
+
+    </div>
+</body>
+
+</html>
